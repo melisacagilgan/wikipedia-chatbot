@@ -11,7 +11,8 @@ This approach results in an assistant that provides users with clear answers bas
 ## 🚀 Live Application
 
 You can test the deployed application directly here:
-**Hugging Face Space Web App:** [https://huggingface.co/spaces/melisacagilgan/wikipedia-chatbot](https://huggingface.co/spaces/melisacagilgan/wikipedia-chatbot)
+
+Hugging Face Space Web App: [https://huggingface.co/spaces/melisacagilgan/wikipedia-chatbot](https://huggingface.co/spaces/melisacagilgan/wikipedia-chatbot)
 
 ## 📚 About the Dataset
 
