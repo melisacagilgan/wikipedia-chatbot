@@ -92,17 +92,38 @@ This command will start a local web server and open the application interface in
 
 The application interface is designed to be simple and intuitive for easy user interaction.
 
-**Interface Components:**
+**1. Knowledge Base Loaded (Initial View)**
+The page displays the application's core function and confirms that the **knowledge base has loaded successfully**, showing the total number of indexed text chunks.
 
-1.  **Title and Description:** At the top of the page, the application's name, "Melini," and a brief description of its function are displayed.
-2.  **Information Message:** A success message indicates that the knowledge base has loaded successfully and shows the total number of indexed text chunks.
-3.  **Question Input Field:** A text box labeled `Your question:` is available for users to type their queries.
-4.  **Answer Area:** After a question is submitted, the generated answer is prominently displayed in a green box.
-5.  **Sources Area:** The three source documents used to generate the answer are presented in expandable sections labeled `Source Document 1`, `Source Document 2`, etc. This allows users to verify the answer's accuracy.
-6.  **Disclaimer Text:** A disclaimer at the bottom of the page states that the application is for experimental purposes and that critical information should be double-checked.
+![Melini Chatbot Knowledge Base Loaded](assets/initial_view.png)
 
-**How to Test:**
+**2. Query Submission**
+The user enters a question into the input field. A status message shows the system is **retrieving context and generating the answer**.
+
+![Melini Chatbot Question Being Asked](assets/query_submission.png)
+
+**3. Answer Display**
+The generated answer is prominently displayed in a **green box**.
+
+![Melini Chatbot Answer Result](assets/answer_display.png)
+
+**4. Source Transparency**
+The three source documents used to generate the answer are presented in expandable sections, allowing users to **verify the answer's accuracy**.
+
+![Melini Chatbot Detailed Sources](assets/source_transparency.png)
+
+---
+
+### How to Test:
 
 - In the text input box, type a question on a topic that can be found in Wikipedia, such as general knowledge, history, or science (e.g., "What is the Higgs boson?", "Who was the first president of the United States?").
 - Press Enter.
 - Review the model's answer and the sources it used.
+
+---
+
+### Deployment Logs:
+
+This screenshot shows the logs from the Streamlit application's startup, including data downloading and vector store build process, which happens during the initial load on Hugging Face Spaces. This can be placed near your **"🚀 Live Application"** section for context on the deployment process.
+
+![Hugging Face Space Build Logs](assets/deployment_logs.png)
